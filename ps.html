@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profil SMP Negeri 31 Semarang</title>
+
+<style>
+:root {
+  --primary: #1e7f5c;      /* hijau utama */
+  --secondary: #0f3d2e;    /* hijau gelap */
+  --accent: #facc15;      /* aksen kuning */
+  --bg: #f3fdf8;          /* background lembut */
+  --text: #2f3e3a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* HEADER */
+.header {
+  background: linear-gradient(135deg, var(--secondary), var(--primary));
+  color: white;
+  padding: 45px 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 95px;
+  height: 95px;
+  background: white;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.header-text h1 {
+  font-size: 28px;
+}
+
+.header-text p {
+  opacity: 0.9;
+}
+
+/* SECTION */
+.section {
+  padding: 40px;
+  background: white;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.section h2 {
+  color: var(--primary);
+  margin-bottom: 15px;
+  border-left: 5px solid var(--accent);
+  padding-left: 10px;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+table td:first-child {
+  font-weight: bold;
+  width: 30%;
+  color: var(--secondary);
+}
+
+/* LIST */
+ul {
+  margin-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* MAP */
+iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+/* FOOTER */
+.footer {
+  background: var(--secondary);
+  color: white;
+  text-align: center;
+  padding: 18px;
+  margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section {
+    padding: 25px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container header-content">
+    
+    <!-- LOGO SEKOLAH -->
+    <div class="logo">
+      <img src="LOGO.jpeg" alt="Logo SMP Negeri 31 Semarang">
+    </div>
+
+    <div class="header-text">
+      <h1>SMP Negeri 31 Semarang</h1>
+      <p>Sekolah Menengah Pertama Negeri</p>
+    </div>
+
+  </div>
+</header>
+
+<!-- PROFIL -->
+<section class="container section">
+  <h2>Profil Sekolah</h2>
+  <p>
+    SMP Negeri 31 Semarang adalah sekolah menengah pertama negeri yang
+    berkomitmen dalam menciptakan peserta didik yang berprestasi,
+    berkarakter, berakhlak mulia, serta peduli terhadap lingkungan.
+  </p>
+</section>
+
+<!-- INFORMASI UMUM -->
+<section class="container section">
+  <h2>Informasi Umum</h2>
+  <table>
+    <tr>
+      <td>Nama Sekolah</td>
+      <td>SMP Negeri 31 Semarang</td>
+    </tr>
+    <tr>
+      <td>NPSN</td>
+      <td>20328835</td>
+    </tr>
+    <tr>
+      <td>Alamat</td>
+      <td>Jl. Tambakharjo No.184, Semarang Barat, Jawa Tengah</td>
+    </tr>
+    <tr>
+      <td>Akreditasi</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Telepon</td>
+      <td>(024) 7609373</td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td>smpn31@semarangkota.go.id</td>
+    </tr>
+  </table>
+</section>
+
+<!-- VISI MISI -->
+<section class="container section">
+  <h2>Visi</h2>
+  <p>
+    Terwujudnya generasi yang cerdas secara spiritual,
+    intelektual, emosional, dan peduli lingkungan.
+  </p>
+
+  <h2>Misi</h2>
+  <ul>
+    <li>Mengembangkan pembelajaran aktif, kreatif, dan inovatif.</li>
+    <li>Meningkatkan kualitas sarana dan prasarana pendidikan.</li>
+    <li>Membentuk karakter peserta didik yang berakhlak mulia.</li>
+    <li>Meningkatkan kepedulian terhadap lingkungan sekolah.</li>
+    <li>Meningkatkan prestasi akademik dan non-akademik.</li>
+  </ul>
+</section>
+
+<!-- LOKASI -->
+<section class="container section">
+  <h2>Lokasi Sekolah</h2>
+  <p>Jl. Tambakharjo No.184, Semarang Barat, Kota Semarang, Jawa Tengah</p>
+  <iframe 
+    src="https://www.google.com/maps?q=SMP%20Negeri%2031%20Semarang&output=embed"
+    loading="lazy">
+  </iframe>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2026 SMP Negeri 31 Semarang | Website Profil Sekolah</p>
+</footer>
+
+</body>
+</html>
